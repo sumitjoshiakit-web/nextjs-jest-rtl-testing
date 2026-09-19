@@ -1,0 +1,6 @@
+{
+  "name": "QA Automation & Testing Dashboard",
+  "description": "Enterprise unit, state integration, and QA automation testing suite featuring Jest, React Testing Library, and network mocking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
