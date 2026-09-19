@@ -1,6 +1,6 @@
 {
-  "name": "QA Automation & Testing Dashboard",
-  "description": "Enterprise unit, state integration, and QA automation testing suite featuring Jest, React Testing Library, and network mocking.",
+  "name": "Next.js QA Testing & Component Automation Pipeline",
+  "description": "Next.js enterprise unit, state integration, and QA automation testing suite featuring Jest, React Testing Library, and network mocking.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

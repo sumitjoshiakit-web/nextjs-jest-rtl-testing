@@ -3,8 +3,8 @@ export default {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
+    '^@/components/(.*)$': '<rootDir>/components/$1',
     '^@/(.*)$': '<rootDir>/$1',
-    '^@/components/(.*)$': '<rootDir>/src/components/$1',
     '\\.(css|less|scss|sass)$': '<rootDir>/__mocks__/styleMock.js',
   },
   transform: {
@@ -30,10 +30,12 @@ export default {
     '<rootDir>/src/**/*.{test,spec}.{ts,tsx}',
   ],
   collectCoverageFrom: [
-    'src/components/{Button,Card,Input,Counter,ProductList}.{ts,tsx}',
+    'components/{Button,Card,Input,Counter,ProductList}.{ts,tsx}',
     '!**/__tests__/**',
     '!**/*.d.ts',
   ],
+  coverageDirectory: '<rootDir>/coverage',
+  coverageReporters: ['text', 'text-summary', 'lcov', 'json', 'json-summary', 'html'],
   coverageThreshold: {
     global: {
       branches: 70,
