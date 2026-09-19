@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Button } from '../components/Button';
+import { Button } from '../src/components/Button';
 
 describe('Phase 1 (P0): Button Component Unit Tests', () => {
   it('mounts without crashing', () => {

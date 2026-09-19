@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { ProductList } from '../components/ProductList';
+import { ProductList } from '../src/components/ProductList';
 
 describe('Phase 3 (P2): ProductList Network Mocking Tests', () => {
   const originalFetch = global.fetch;

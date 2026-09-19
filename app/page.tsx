@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Button } from '../components/Button';
-import { Card } from '../components/Card';
-import { Input } from '../components/Input';
-import { Counter } from '../components/Counter';
-import { ProductList } from '../components/ProductList';
+import { Button } from '../src/components/Button';
+import { Card } from '../src/components/Card';
+import { Input } from '../src/components/Input';
+import { Counter } from '../src/components/Counter';
+import { ProductList } from '../src/components/ProductList';
 import { CheckCircle } from 'lucide-react';
 
 export default function Page() {
@@ -26,7 +26,7 @@ export default function Page() {
           </div>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 self-start sm:self-auto">
             <CheckCircle className="w-4 h-4 text-emerald-600" />
-            <span>22/22 Tests Passing (90.9% Coverage)</span>
+            <span>22/22 Tests • Coverage Verified with Jest (Threshold &ge; 70%)</span>
           </div>
         </header>
 

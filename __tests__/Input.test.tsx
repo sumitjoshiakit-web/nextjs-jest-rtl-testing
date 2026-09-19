@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Input } from '../components/Input';
+import { Input } from '../src/components/Input';
 
 describe('Phase 1 (P0): Input Component Unit Tests', () => {
   it('mounts without crashing', () => {

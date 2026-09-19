@@ -24,7 +24,7 @@ export default function App() {
           </div>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 self-start sm:self-auto">
             <CheckCircle className="w-4 h-4 text-emerald-600" />
-            <span>22/22 Tests Passing (90.9% Coverage)</span>
+            <span>22/22 Tests • Coverage Verified with Jest (Threshold &ge; 70%)</span>
           </div>
         </header>
 

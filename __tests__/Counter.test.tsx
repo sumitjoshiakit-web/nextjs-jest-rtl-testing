@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Counter } from '../components/Counter';
+import { Counter } from '../src/components/Counter';
 
 describe('Phase 2 (P1): Counter State & Integration Tests', () => {
   it('mounts and renders initial count state 0', () => {

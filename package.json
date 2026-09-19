@@ -24,7 +24,7 @@
     "express": "^4.21.2",
     "lucide-react": "^0.546.0",
     "motion": "^12.23.24",
-    "next": "^16.3.5",
+    "next": "15.2.1",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "vite": "^8.3.0"
@@ -47,6 +47,6 @@
     "tailwindcss": "^4.3.3",
     "ts-jest": "^29.4.12",
     "tsx": "^4.21.0",
-    "typescript": "^7.0.2"
+    "typescript": "^5.7.2"
   }
 }

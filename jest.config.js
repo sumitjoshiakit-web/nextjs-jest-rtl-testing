@@ -3,7 +3,7 @@ export default {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
-    '^@/components/(.*)$': '<rootDir>/components/$1',
+    '^@/components/(.*)$': '<rootDir>/src/components/$1',
     '^@/(.*)$': '<rootDir>/$1',
     '\\.(css|less|scss|sass)$': '<rootDir>/__mocks__/styleMock.js',
   },
@@ -30,7 +30,7 @@ export default {
     '<rootDir>/src/**/*.{test,spec}.{ts,tsx}',
   ],
   collectCoverageFrom: [
-    'components/{Button,Card,Input,Counter,ProductList}.{ts,tsx}',
+    'src/components/{Button,Card,Input,Counter,ProductList}.{ts,tsx}',
     '!**/__tests__/**',
     '!**/*.d.ts',
   ],

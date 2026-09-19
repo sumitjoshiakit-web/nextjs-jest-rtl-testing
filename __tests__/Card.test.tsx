@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { Card } from '../components/Card';
+import { Card } from '../src/components/Card';
 
 describe('Phase 1 (P0): Card Component Unit Tests', () => {
   it('mounts without crashing', () => {
