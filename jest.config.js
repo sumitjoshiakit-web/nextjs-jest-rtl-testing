@@ -35,7 +35,7 @@ export default {
     '!**/*.d.ts',
   ],
   coverageDirectory: '<rootDir>/coverage',
-  coverageReporters: ['text', 'text-summary', 'lcov', 'json', 'json-summary', 'html'],
+  coverageReporters: ['text', 'lcov', 'html'],
   coverageThreshold: {
     global: {
       branches: 70,
