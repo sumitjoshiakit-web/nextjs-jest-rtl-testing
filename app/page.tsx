@@ -26,7 +26,7 @@ export default function Page() {
           </div>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 self-start sm:self-auto">
             <CheckCircle className="w-4 h-4 text-emerald-600" />
-            <span>22/22 Tests • Coverage Verified with Jest (Threshold &ge; 70%)</span>
+            <span>Jest test setup ready</span>
           </div>
         </header>
 
@@ -95,18 +95,18 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Phase 3: Advanced Optimization (P2) */}
+        {/* Phase 3: Async Data & Mocked API (P2) */}
         <section className="space-y-4">
           <div className="border-b border-slate-200 pb-2">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
-              Phase 3 — Network Mocking (ProductList)
+              Phase 3 — Async Data &amp; Mocked API
             </h2>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs flex flex-col items-center">
             <ProductList />
             <p className="text-xs text-slate-400 mt-4 font-mono">
-              global.fetch = jest.fn() &rarr; mocks API offline
+              API requests are mocked during tests
             </p>
           </div>
         </section>
