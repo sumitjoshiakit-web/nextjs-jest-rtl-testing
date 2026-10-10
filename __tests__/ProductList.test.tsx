@@ -33,7 +33,7 @@ describe('Phase 3 (P2): ProductList Network Mocking Tests', () => {
       json: async () => mockProductPayload,
     } as Response);
 
-    render(<ProductList apiUrl="https://api.example.com/products" />);
+    render(<ProductList apiUrl="https://dummyjson.com/products/1" />);
 
     // Verified DOM payload rendering after fake network resolution
     const titleElement = await screen.findByTestId('product-title');
@@ -43,7 +43,7 @@ describe('Phase 3 (P2): ProductList Network Mocking Tests', () => {
     expect(priceElement).toHaveTextContent('₹50000');
 
     // Confirm mock was called with exact URL without touching real internet
-    expect(global.fetch).toHaveBeenCalledWith('https://api.example.com/products');
+    expect(global.fetch).toHaveBeenCalledWith('https://dummyjson.com/products/1');
     expect(global.fetch).toHaveBeenCalledTimes(1);
   });
 
