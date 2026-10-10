@@ -112,11 +112,26 @@ export default function Page() {
         </section>
 
         {/* Footer */}
-        <footer className="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
-          <span>Run test suite in terminal:</span>
-          <code className="bg-slate-900 text-slate-100 px-3 py-1.5 rounded-md font-mono text-xs">
-            npm test -- --coverage
-          </code>
+        <footer className="mt-2 border-t border-slate-200 pt-6 pb-2">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="text-center sm:text-left">
+              <p className="text-sm font-semibold text-slate-800">
+                Next.js QA Testing Suite
+              </p>
+              <p className="mt-1 text-xs text-slate-500">
+                Built with Jest and React Testing Library
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-2 sm:items-end">
+              <span className="text-xs text-slate-500">Run tests with coverage</span>
+              <code className="rounded-lg border border-slate-200 bg-slate-900 px-3 py-2 font-mono text-xs text-slate-100 shadow-sm">
+                npm test -- --coverage
+              </code>
+            </div>
+          </div>
+          <p className="mt-5 text-center text-[11px] text-slate-400">
+            Component tests · Interaction tests · Mocked API tests
+          </p>
         </footer>
       </div>
     </main>
