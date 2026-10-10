@@ -12,7 +12,7 @@ export interface ProductListProps {
 }
 
 export const ProductList: React.FC<ProductListProps> = ({
-  apiUrl = 'https://api.example.com/products',
+  apiUrl = 'https://dummyjson.com/products/1',
   autoFetch = true,
 }) => {
   const [product, setProduct] = useState<Product | null>(null);
